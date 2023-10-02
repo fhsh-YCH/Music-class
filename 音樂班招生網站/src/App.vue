@@ -1,3 +1,7 @@
+<script setup>
+import Info from "./components/MusicClass.vue";
+</script>
+
 <template>
   <div class="overflow-x-hidden">
     <div class="relative w-screen overflow-x-hidden bg-[#DBCEBB]">
@@ -76,91 +80,25 @@
           Latest News
         </p>
         <!-- component 1 -->
-        <div class="flex flex-col items-center mt-[5vw]">
-          <div class="flex items-center justify-center">
-            <div
-              class="w-[10vw] h-[12vw] rounded-[1.2vw] bg-[#FFFFFF] flex items-center justify-center overflow-hidden text-[3.5vw] text-[#7D5936] font-bold"
-            >
-              1/4
-            </div>
-            <div
-              class="w-[45vw] h-[12vw] rounded-[1.2vw] bg-[#FFFFFF] ml-[0.8vw] px-[2vw] flex items-center justify-center overflow-hidden text-[2vw] font-bold"
-            >
-              臺北市立復興高級中學112學年度戲劇班甄選入學簡章公告
-            </div>
+        <div class="gap-4 grid grid-cols-1 lg:grid-row-2 lg:grid-cols-2">
+          <div>
+            <Info />
+            <div class="p-3"></div>
+            <Info />
           </div>
-          <button
-            class="w-[56vw] h-[4vw] rounded-[10vw] mt-[1.5vw] bg-[#7D5936] text-[1.8vw] text-white overflow-hidden drop-shadow-lg"
-          >
-            網路公告
-          </button>
-        </div>
-        <!-- component 2 -->
-        <div class="flex flex-col items-center mt-[10vw]">
-          <div class="flex items-center justify-center">
-            <div
-              class="w-[10vw] h-[12vw] rounded-[1.2vw] bg-[#FFFFFF] flex items-center justify-center overflow-hidden text-[3.5vw] text-[#7D5936] font-bold"
-            >
-              1/4
-            </div>
-            <div
-              class="w-[45vw] h-[12vw] rounded-[1.2vw] bg-[#FFFFFF] ml-[0.8vw] px-[2vw] flex items-center justify-center overflow-hidden text-[2vw] font-bold"
-            >
-              臺北市立復興高級中學112學年度戲劇班甄選入學簡章公告
-            </div>
+          <div>
+            <Info />
+            <div class="p-3"></div>
+            <Info />
           </div>
-          <button
-            class="w-[56vw] h-[4vw] rounded-[10vw] mt-[1.5vw] bg-[#7D5936] text-[1.8vw] text-white overflow-hidden drop-shadow-lg"
-          >
-            網路公告
-          </button>
         </div>
 
-        <!-- component 3 -->
-        <div class="flex flex-col items-center mt-[10vw]">
-          <div class="flex items-center justify-center">
-            <div
-              class="w-[10vw] h-[12vw] rounded-[1.2vw] bg-[#FFFFFF] flex items-center justify-center overflow-hidden text-[3.5vw] text-[#7D5936] font-bold"
-            >
-              1/4
-            </div>
-            <div
-              class="w-[45vw] h-[12vw] rounded-[1.2vw] bg-[#FFFFFF] ml-[0.8vw] px-[2vw] flex items-center justify-center overflow-hidden text-[2vw] font-bold"
-            >
-              臺北市立復興高級中學112學年度戲劇班甄選入學簡章公告
-            </div>
-          </div>
-          <button
-            class="w-[56vw] h-[4vw] rounded-[10vw] mt-[1.5vw] bg-[#7D5936] text-[1.8vw] text-white overflow-hidden drop-shadow-lg"
-          >
-            網路公告
-          </button>
-        </div>
-        <!-- component 4 -->
-        <div class="flex flex-col items-center mt-[10vw]">
-          <div class="flex items-center justify-center">
-            <div
-              class="w-[10vw] h-[12vw] rounded-[1.2vw] bg-[#FFFFFF] flex items-center justify-center overflow-hidden text-[3.5vw] text-[#7D5936] font-bold"
-            >
-              1/4
-            </div>
-            <div
-              class="w-[45vw] h-[12vw] rounded-[1.2vw] bg-[#FFFFFF] ml-[0.8vw] px-[2vw] flex items-center justify-center overflow-hidden text-[2vw] font-bold"
-            >
-              臺北市立復興高級中學112學年度戲劇班甄選入學簡章公告
-            </div>
-          </div>
-          <button
-            class="w-[56vw] h-[4vw] rounded-[10vw] mt-[1.5vw] bg-[#7D5936] text-[1.8vw] text-white overflow-hidden drop-shadow-lg"
-          >
-            網路公告
-          </button>
-        </div>
         <!-- Footer -->
+        <div class="p-3 lg:p-6"></div>
         <div
-          class="mt-[8vw] border-2 border-solid border-[#7D5936] rounded-md w-[70vw] h-[35vw] pt-[2.8vw] flex flex-col items-center"
+          class="border-2 border-solid border-[#7D5936] rounded-md py-2 px-3 flex flex-col items-center"
         >
-          <div class="justify-center text-[2.8vw] text-[#7D5936] font-bold">
+          <div class="text-xs text-[#7D5936] font-bold lg:text-xl">
             <p>主辦學校：臺北市立復興高級中學</p>
             <p>主辦單位：藝術組</p>
             <p class="text-[#AA483B]">
@@ -168,36 +106,40 @@
             </p>
           </div>
           <!-- web link -->
-          <div class="flex justify-center items-center mt-[2vw]">
+          <div class="flex justify-center items-center pt-2 gap-10">
             <button
-              class="w-[18vw] h-[6vw] border-[#6F5B49] border-[0.6vw] rounded-md mr-[17vw] justify-center text-[#AA483B] font-bold text-[3vw]"
+              class="py-1 px-3 border-[#6F5B49] border-solid border rounded-md justify-center text-[#7D5936] font-bold text-sm lg:text-xl"
             >
               音樂班官網
             </button>
             <button
               href=""
-              class="w-[18vw] h-[6vw] border-[#6F5B49] border-[0.6vw] rounded-md justify-center text-[#AA483B] font-bold text-[3vw]"
+              class="py-1 px-3 border-[#6F5B49] border-solid border rounded-md justify-center text-[#7D5936] font-bold text-sm lg:text-xl"
             >
               FB專頁
             </button>
           </div>
-
-          <div class="mt-[2vw] flex">
-            <p class="text-[2vw] text-[#7D5936] font-light pr-[30vw]">
-              Designed :
-            </p>
-            <p class="text-[2vw] text-[#7D5936] font-light">Mentored : 陳 晉</p>
-          </div>
-          <div class="mt-[1vw] flex">
-            <p class="text-[2vw] text-[#7D5936] font-light">Created :</p>
-            <p class="text-[2vw] text-[#7D5936] font-light pl-[23vw]">
-              Powered : FHSH IT DEPT
-            </p>
+          <div class="p-1"></div>
+          <div>
+            <div class="flex gap-4">
+              <p class="text-xs text-[#7D5936] lg:text-xl">
+                Designed : 楊沁璇、張語桐
+              </p>
+              <p class="text-xs text-[#7D5936] lg:text-xl">Mentored : 陳 晉</p>
+            </div>
+            <div class="flex gap-10">
+              <p class="text-xs text-[#7D5936] lg:text-xl">Created : 楊沁璇</p>
+              <p class="text-xs text-[#7D5936] lg:text-xl">
+                Powered : FHSH IT DEPT
+              </p>
+            </div>
           </div>
         </div>
+        <div class="p-2 lg:p-4"></div>
+        <!-- <div class="bg-[#7D5936] w-full h-3 lg:h-7"></div> -->
 
         <!-- 棋盤格 -->
-        <div class="w-full h-[5vw] bg-[#7D5936] mt-[5vw] flex">
+        <div class="w-full bg-[#7D5936] flex">
           <div class="w-[2.5vw] h-[2.5vw] bg-white"></div>
           <div class="w-[2.5vw] h-[2.5vw] bg-white mt-[2.5vw]"></div>
           <div class="w-[2.5vw] h-[2.5vw] bg-white"></div>
